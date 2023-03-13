@@ -10,9 +10,12 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "eslint": "^8.36.0",
@@ -20,6 +23,7 @@
     "eslint-config-turbo": "latest",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-turbo": "^0.0.9",
+    "husky": "^8.0.3",
     "prettier": "latest",
     "turbo": "latest",
     "typescript": "^4.9.5"
