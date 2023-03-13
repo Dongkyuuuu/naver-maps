@@ -1,1 +1,1 @@
-export default function Hello() {}
+export * from "./components";

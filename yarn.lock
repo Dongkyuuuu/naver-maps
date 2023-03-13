@@ -3445,9 +3445,23 @@ prettier@latest:
   languageName: node
   linkType: hard
 
-"react-naver-maps@workspace:apps/react":
+"react-naver-maps@*, react-naver-maps@workspace:apps/react":
   version: 0.0.0-use.local
   resolution: "react-naver-maps@workspace:apps/react"
+  dependencies:
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    eslint: "*"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    tsconfig: "*"
+    typescript: "*"
+  languageName: unknown
+  linkType: soft
+
+"react-playground@workspace:apps/react-playground":
+  version: 0.0.0-use.local
+  resolution: "react-playground@workspace:apps/react-playground"
   dependencies:
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
@@ -3455,6 +3469,7 @@ prettier@latest:
     eslint: "*"
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-naver-maps: "*"
     tsconfig: "*"
     typescript: "*"
     vite: ^4.1.0
