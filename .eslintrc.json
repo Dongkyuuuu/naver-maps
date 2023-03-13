@@ -1,0 +1,22 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jest": true
+  },
+  "extends": [
+    "turbo",
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "eslint-plugin-prettier", "turbo"],
+  "rules": {
+    "no-unused-vars": "off", // 타입 내부 미사용 param 에러 제거
+    "@typescript-eslint/no-unused-vars": ["error"] // no-unused-vars 대체
+  }
+}

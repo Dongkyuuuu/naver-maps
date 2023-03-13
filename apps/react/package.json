@@ -1,7 +1,7 @@
 {
   "name": "react-naver-maps",
+  "description": "NaverMap component for react",
   "version": "0.0.0",
-  "type": "module",
   "license": "MIT",
   "main": "dist/react-naver-maps.cjs.js",
   "module": "dist/react-naver-maps.esm.js",
@@ -12,6 +12,11 @@
     "README.md"
   ],
   "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "yarn lint --fix"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/DongKyuuuu/naver-maps"
@@ -24,9 +29,6 @@
     "url": "https://github.com/Dongkyuuuu/naver-maps/issues",
     "email": "dongkyu.me@gmail.com"
   },
-  "scripts": {
-    "dev": "vite"
-  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -35,6 +37,8 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "*",
+    "tsconfig": "*",
     "typescript": "*",
     "vite": "^4.1.0"
   }
