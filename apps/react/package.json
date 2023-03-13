@@ -1,0 +1,41 @@
+{
+  "name": "react-naver-maps",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/react-naver-maps.cjs.js",
+  "module": "dist/react-naver-maps.esm.js",
+  "types": "dist/react-naver-maps.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/react-naver-maps.d.ts",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DongKyuuuu/naver-maps"
+  },
+  "author": {
+    "name": "Dongkyuuuu",
+    "email": "dongkyu.me@gmail.com"
+  },
+  "bug": {
+    "url": "https://github.com/Dongkyuuuu/naver-maps/issues",
+    "email": "dongkyu.me@gmail.com"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "*",
+    "vite": "^4.1.0"
+  }
+}
