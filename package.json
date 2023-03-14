@@ -31,5 +31,8 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "ts-pattern": "^4.2.1"
+  }
 }

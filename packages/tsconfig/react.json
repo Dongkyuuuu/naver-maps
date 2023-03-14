@@ -19,6 +19,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "exclude": ["node_modules"],
   "references": [{ "path": "./node.json" }]
 }

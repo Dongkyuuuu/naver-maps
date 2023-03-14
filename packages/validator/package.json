@@ -1,0 +1,23 @@
+{
+  "name": "validator",
+  "description": "naver maps validator",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "yarn lint --fix"
+  },
+  "dependencies": {
+    "ts-pattern": "*"
+  },
+  "devDependencies": {
+    "@types/navermaps": "^3.6.4",
+    "@types/node": "^18.15.0",
+    "eslint": "*",
+    "tsconfig": "*",
+    "types": "*",
+    "typescript": "*"
+  }
+}

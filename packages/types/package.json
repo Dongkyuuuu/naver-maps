@@ -1,0 +1,19 @@
+{
+  "name": "types",
+  "description": "naver maps types",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.d.ts",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "@types/navermaps": "^3.6.4",
+    "@types/node": "^18.15.0",
+    "eslint": "*",
+    "tsconfig": "*",
+    "typescript": "*"
+  }
+}

@@ -30,6 +30,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "tsconfig",\
         "reference": "workspace:packages/tsconfig"\
+      },\
+      {\
+        "name": "types",\
+        "reference": "workspace:packages/types"\
+      },\
+      {\
+        "name": "utils",\
+        "reference": "workspace:packages/utils"\
+      },\
+      {\
+        "name": "validator",\
+        "reference": "workspace:packages/validator"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -39,6 +51,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["react-naver-maps", ["workspace:apps/react"]],\
       ["react-playground", ["workspace:apps/react-playground"]],\
       ["tsconfig", ["workspace:packages/tsconfig"]],\
+      ["types", ["workspace:packages/types"]],\
+      ["utils", ["workspace:packages/utils"]],\
+      ["validator", ["workspace:packages/validator"]],\
       ["vue3-naver-maps", ["workspace:apps/vue"]]\
     ],\
     "fallbackPool": [\
@@ -59,6 +74,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-turbo", "virtual:04ce7f2a06d2b5c6414fcf9e1d0c337ef6b2ecab3422a604f5a75e1d413c61fc8fbfdcf03e2ffafb9e37a3d49d4100e706d1435da53aaa3888d44a7540d3cbb8#npm:0.0.9"],\
             ["husky", "npm:8.0.3"],\
             ["prettier", "npm:2.8.4"],\
+            ["ts-pattern", "npm:4.2.1"],\
             ["turbo", "npm:1.8.3"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
@@ -1082,6 +1098,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/geojson", [\
+        ["npm:7946.0.10", {\
+          "packageLocation": "./.yarn/cache/@types-geojson-npm-7946.0.10-deca8d1263-12c407c2dc.zip/node_modules/@types/geojson/",\
+          "packageDependencies": [\
+            ["@types/geojson", "npm:7946.0.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/json-schema", [\
         ["npm:7.0.11", {\
           "packageLocation": "./.yarn/cache/@types-json-schema-npm-7.0.11-79462ae5ca-527bddfe62.zip/node_modules/@types/json-schema/",\
@@ -1096,6 +1121,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-minimist-npm-1.2.2-a445de65da-b8da83c66e.zip/node_modules/@types/minimist/",\
           "packageDependencies": [\
             ["@types/minimist", "npm:1.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/navermaps", [\
+        ["npm:3.6.4", {\
+          "packageLocation": "./.yarn/cache/@types-navermaps-npm-3.6.4-213f0689b5-2fa24679d5.zip/node_modules/@types/navermaps/",\
+          "packageDependencies": [\
+            ["@types/navermaps", "npm:3.6.4"],\
+            ["@types/geojson", "npm:7946.0.10"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3751,6 +3786,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-turbo", "virtual:04ce7f2a06d2b5c6414fcf9e1d0c337ef6b2ecab3422a604f5a75e1d413c61fc8fbfdcf03e2ffafb9e37a3d49d4100e706d1435da53aaa3888d44a7540d3cbb8#npm:0.0.9"],\
             ["husky", "npm:8.0.3"],\
             ["prettier", "npm:2.8.4"],\
+            ["ts-pattern", "npm:4.2.1"],\
             ["turbo", "npm:1.8.3"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
@@ -4175,6 +4211,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/react/",\
           "packageDependencies": [\
             ["react-naver-maps", "workspace:apps/react"],\
+            ["@types/navermaps", "npm:3.6.4"],\
+            ["@types/node", "npm:18.15.0"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["eslint", "npm:8.36.0"],\
@@ -4191,6 +4229,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/react-playground/",\
           "packageDependencies": [\
             ["react-playground", "workspace:apps/react-playground"],\
+            ["@types/node", "npm:18.15.0"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:7ac045937dafa061bac14b354cff0540114cf288bd5712eb0fb9269f19a6102e6d23d95757c691a1fe85b3ce54216c967bd3f8c70f5f98d0ad1003adfe0a22bb#npm:3.1.0"],\
@@ -4786,6 +4825,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ts-pattern", [\
+        ["npm:4.2.1", {\
+          "packageLocation": "./.yarn/cache/ts-pattern-npm-4.2.1-d9582df752-bafff4f5fa.zip/node_modules/ts-pattern/",\
+          "packageDependencies": [\
+            ["ts-pattern", "npm:4.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["tsconfig", [\
         ["workspace:packages/tsconfig", {\
           "packageLocation": "./packages/tsconfig/",\
@@ -4950,6 +4998,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["types", [\
+        ["workspace:packages/types", {\
+          "packageLocation": "./packages/types/",\
+          "packageDependencies": [\
+            ["types", "workspace:packages/types"],\
+            ["@types/navermaps", "npm:3.6.4"],\
+            ["@types/node", "npm:18.15.0"],\
+            ["eslint", "npm:8.36.0"],\
+            ["tsconfig", "workspace:packages/tsconfig"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["typescript", [\
         ["patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76", {\
           "packageLocation": "./.yarn/cache/typescript-patch-72dc6f164f-ab417a2f39.zip/node_modules/typescript/",\
@@ -5031,6 +5093,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["utils", [\
+        ["workspace:packages/utils", {\
+          "packageLocation": "./packages/utils/",\
+          "packageDependencies": [\
+            ["utils", "workspace:packages/utils"],\
+            ["@types/navermaps", "npm:3.6.4"],\
+            ["@types/node", "npm:18.15.0"],\
+            ["eslint", "npm:8.36.0"],\
+            ["tsconfig", "workspace:packages/tsconfig"],\
+            ["types", "workspace:packages/types"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
+            ["validator", "workspace:packages/validator"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["v8-compile-cache-lib", [\
         ["npm:3.0.1", {\
           "packageLocation": "./.yarn/cache/v8-compile-cache-lib-npm-3.0.1-4886071ece-78089ad549.zip/node_modules/v8-compile-cache-lib/",\
@@ -5051,6 +5129,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["validator", [\
+        ["workspace:packages/validator", {\
+          "packageLocation": "./packages/validator/",\
+          "packageDependencies": [\
+            ["validator", "workspace:packages/validator"],\
+            ["@types/navermaps", "npm:3.6.4"],\
+            ["@types/node", "npm:18.15.0"],\
+            ["eslint", "npm:8.36.0"],\
+            ["ts-pattern", "npm:4.2.1"],\
+            ["tsconfig", "workspace:packages/tsconfig"],\
+            ["types", "workspace:packages/types"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["vite", [\
         ["npm:4.1.4", {\
           "packageLocation": "./.yarn/cache/vite-npm-4.1.4-224b9db54d-50a9a1f2e2.zip/node_modules/vite/",\
@@ -5064,7 +5158,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["vite", "virtual:7ac045937dafa061bac14b354cff0540114cf288bd5712eb0fb9269f19a6102e6d23d95757c691a1fe85b3ce54216c967bd3f8c70f5f98d0ad1003adfe0a22bb#npm:4.1.4"],\
             ["@types/less", null],\
-            ["@types/node", null],\
+            ["@types/node", "npm:18.15.0"],\
             ["@types/sass", null],\
             ["@types/stylus", null],\
             ["@types/sugarss", null],\

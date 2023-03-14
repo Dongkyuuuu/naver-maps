@@ -849,6 +849,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/geojson@npm:*":
+  version: 7946.0.10
+  resolution: "@types/geojson@npm:7946.0.10"
+  checksum: 12c407c2dc93ecb26c08af533ee732f1506a9b29456616ba7ba1d525df96206c28ddf44a528f6a5415d7d22893e9d967420940a9c095ee5e539c1eba5fefc1f4
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
@@ -863,7 +870,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/navermaps@npm:^3.6.4":
+  version: 3.6.4
+  resolution: "@types/navermaps@npm:3.6.4"
+  dependencies:
+    "@types/geojson": "*"
+  checksum: 2fa24679d51996341f6d38f6c9ff915b116e688b0125e96beeb218abb0502b6e071179fe197f8c68f4ac05b6e63cbd540eea729a3edb8e6d2b83fc278262bb9a
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:*, @types/node@npm:^18.15.0":
   version: 18.15.0
   resolution: "@types/node@npm:18.15.0"
   checksum: d81372276dd5053b1743338b61a2178ff9722dc609189d01fc7d1c2acd539414039e0e4780678730514390dad3f29c366a28c29e8dbd5b0025651181f6dd6669
@@ -3103,6 +3119,7 @@ eslint-config-turbo@latest:
     eslint-plugin-turbo: ^0.0.9
     husky: ^8.0.3
     prettier: latest
+    ts-pattern: ^4.2.1
     turbo: latest
     typescript: ^4.9.5
   languageName: unknown
@@ -3449,6 +3466,8 @@ prettier@latest:
   version: 0.0.0-use.local
   resolution: "react-naver-maps@workspace:apps/react"
   dependencies:
+    "@types/navermaps": ^3.6.4
+    "@types/node": ^18.15.0
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
     eslint: "*"
@@ -3463,6 +3482,7 @@ prettier@latest:
   version: 0.0.0-use.local
   resolution: "react-playground@workspace:apps/react-playground"
   dependencies:
+    "@types/node": ^18.15.0
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
     "@vitejs/plugin-react": ^3.1.0
@@ -4012,6 +4032,13 @@ prettier@latest:
   languageName: node
   linkType: hard
 
+"ts-pattern@npm:*, ts-pattern@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "ts-pattern@npm:4.2.1"
+  checksum: bafff4f5fa74cb697b679a3a7a276c5102fa0712570e3fa1cb5ccb1e36aaabbd21d1207878cd9aa3c23a2b87b2b26f90ec32904d98fd8b53c681c41c14e03260
+  languageName: node
+  linkType: hard
+
 "tsconfig@*, tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "tsconfig@workspace:packages/tsconfig"
@@ -4144,6 +4171,18 @@ turbo@latest:
   languageName: node
   linkType: hard
 
+"types@*, types@workspace:packages/types":
+  version: 0.0.0-use.local
+  resolution: "types@workspace:packages/types"
+  dependencies:
+    "@types/navermaps": ^3.6.4
+    "@types/node": ^18.15.0
+    eslint: "*"
+    tsconfig: "*"
+    typescript: "*"
+  languageName: unknown
+  linkType: soft
+
 "typescript@npm:*, typescript@npm:^4.6.4, typescript@npm:^4.9.5":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
@@ -4219,6 +4258,20 @@ turbo@latest:
   languageName: node
   linkType: hard
 
+"utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "utils@workspace:packages/utils"
+  dependencies:
+    "@types/navermaps": ^3.6.4
+    "@types/node": ^18.15.0
+    eslint: "*"
+    tsconfig: "*"
+    types: "*"
+    typescript: "*"
+    validator: "*"
+  languageName: unknown
+  linkType: soft
+
 "v8-compile-cache-lib@npm:^3.0.1":
   version: 3.0.1
   resolution: "v8-compile-cache-lib@npm:3.0.1"
@@ -4235,6 +4288,20 @@ turbo@latest:
   checksum: 35703ac889d419cf2aceef63daeadbe4e77227c39ab6287eeb6c1b36a746b364f50ba22e88591f5d017bc54685d8137bc2d328d0a896e4d3fd22093c0f32a9ad
   languageName: node
   linkType: hard
+
+"validator@*, validator@workspace:packages/validator":
+  version: 0.0.0-use.local
+  resolution: "validator@workspace:packages/validator"
+  dependencies:
+    "@types/navermaps": ^3.6.4
+    "@types/node": ^18.15.0
+    eslint: "*"
+    ts-pattern: "*"
+    tsconfig: "*"
+    types: "*"
+    typescript: "*"
+  languageName: unknown
+  linkType: soft
 
 "vite@npm:^4.1.0":
   version: 4.1.4
