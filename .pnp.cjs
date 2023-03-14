@@ -16,7 +16,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
-        "name": "react-naver-maps",\
+        "name": "@dongkyuuuu/react-naver-maps",\
         "reference": "workspace:apps/react"\
       },\
       {\
@@ -24,7 +24,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:apps/react-playground"\
       },\
       {\
-        "name": "vue3-naver-maps",\
+        "name": "@dongkyuuuu/vue3-naver-maps",\
         "reference": "workspace:apps/vue"\
       },\
       {\
@@ -47,14 +47,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@dongkyuuuu/react-naver-maps", ["workspace:apps/react"]],\
+      ["@dongkyuuuu/vue3-naver-maps", ["workspace:apps/vue"]],\
       ["naver-maps", ["workspace:."]],\
-      ["react-naver-maps", ["workspace:apps/react"]],\
       ["react-playground", ["workspace:apps/react-playground"]],\
       ["tsconfig", ["workspace:packages/tsconfig"]],\
       ["types", ["workspace:packages/types"]],\
       ["utils", ["workspace:packages/utils"]],\
-      ["validator", ["workspace:packages/validator"]],\
-      ["vue3-naver-maps", ["workspace:apps/vue"]]\
+      ["validator", ["workspace:packages/validator"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -634,6 +634,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jridgewell/trace-mapping", "npm:0.3.9"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@dongkyuuuu/react-naver-maps", [\
+        ["workspace:apps/react", {\
+          "packageLocation": "./apps/react/",\
+          "packageDependencies": [\
+            ["@dongkyuuuu/react-naver-maps", "workspace:apps/react"],\
+            ["@types/navermaps", "npm:3.6.4"],\
+            ["@types/node", "npm:18.15.0"],\
+            ["@types/react", "npm:18.0.28"],\
+            ["@types/react-dom", "npm:18.0.11"],\
+            ["eslint", "npm:8.36.0"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:d144bffe400c09f4928c69069112cf6fea33aabb7663e4fadf7f3ae85bb6560ed40c4a6a687dc28515ce8644560ee1e063b24d24baeff99fba34dec9c08ed4b7#npm:18.2.0"],\
+            ["tsconfig", "workspace:packages/tsconfig"],\
+            ["types", "workspace:packages/types"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
+            ["utils", "workspace:packages/utils"],\
+            ["validator", "workspace:packages/validator"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@dongkyuuuu/vue3-naver-maps", [\
+        ["workspace:apps/vue", {\
+          "packageLocation": "./apps/vue/",\
+          "packageDependencies": [\
+            ["@dongkyuuuu/vue3-naver-maps", "workspace:apps/vue"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@esbuild/android-arm", [\
@@ -4190,10 +4220,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:73723ad3e023c3ac297e7f7883a8ab79faed5336c50cef377d0195f5ffd608535bf592dcf3707b9e98973048df87ab4ce137b0214e0ca79bd2f049faf74269f7#npm:18.2.0", {\
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-9dcb4f6c7e/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
+        ["virtual:d144bffe400c09f4928c69069112cf6fea33aabb7663e4fadf7f3ae85bb6560ed40c4a6a687dc28515ce8644560ee1e063b24d24baeff99fba34dec9c08ed4b7#npm:18.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-45785a299c/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
           "packageDependencies": [\
-            ["react-dom", "virtual:73723ad3e023c3ac297e7f7883a8ab79faed5336c50cef377d0195f5ffd608535bf592dcf3707b9e98973048df87ab4ce137b0214e0ca79bd2f049faf74269f7#npm:18.2.0"],\
+            ["react-dom", "virtual:d144bffe400c09f4928c69069112cf6fea33aabb7663e4fadf7f3ae85bb6560ed40c4a6a687dc28515ce8644560ee1e063b24d24baeff99fba34dec9c08ed4b7#npm:18.2.0"],\
             ["@types/react", "npm:18.0.28"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
@@ -4206,32 +4236,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["react-naver-maps", [\
-        ["workspace:apps/react", {\
-          "packageLocation": "./apps/react/",\
-          "packageDependencies": [\
-            ["react-naver-maps", "workspace:apps/react"],\
-            ["@types/navermaps", "npm:3.6.4"],\
-            ["@types/node", "npm:18.15.0"],\
-            ["@types/react", "npm:18.0.28"],\
-            ["@types/react-dom", "npm:18.0.11"],\
-            ["eslint", "npm:8.36.0"],\
-            ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:73723ad3e023c3ac297e7f7883a8ab79faed5336c50cef377d0195f5ffd608535bf592dcf3707b9e98973048df87ab4ce137b0214e0ca79bd2f049faf74269f7#npm:18.2.0"],\
-            ["tsconfig", "workspace:packages/tsconfig"],\
-            ["types", "workspace:packages/types"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
-            ["utils", "workspace:packages/utils"],\
-            ["validator", "workspace:packages/validator"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
       ["react-playground", [\
         ["workspace:apps/react-playground", {\
           "packageLocation": "./apps/react-playground/",\
           "packageDependencies": [\
             ["react-playground", "workspace:apps/react-playground"],\
+            ["@dongkyuuuu/react-naver-maps", "workspace:apps/react"],\
             ["@types/navermaps", "npm:3.6.4"],\
             ["@types/node", "npm:18.15.0"],\
             ["@types/react", "npm:18.0.28"],\
@@ -4239,8 +4249,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-react", "virtual:7ac045937dafa061bac14b354cff0540114cf288bd5712eb0fb9269f19a6102e6d23d95757c691a1fe85b3ce54216c967bd3f8c70f5f98d0ad1003adfe0a22bb#npm:3.1.0"],\
             ["eslint", "npm:8.36.0"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:73723ad3e023c3ac297e7f7883a8ab79faed5336c50cef377d0195f5ffd608535bf592dcf3707b9e98973048df87ab4ce137b0214e0ca79bd2f049faf74269f7#npm:18.2.0"],\
-            ["react-naver-maps", "workspace:apps/react"],\
+            ["react-dom", "virtual:d144bffe400c09f4928c69069112cf6fea33aabb7663e4fadf7f3ae85bb6560ed40c4a6a687dc28515ce8644560ee1e063b24d24baeff99fba34dec9c08ed4b7#npm:18.2.0"],\
             ["tsconfig", "workspace:packages/tsconfig"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["vite", "virtual:7ac045937dafa061bac14b354cff0540114cf288bd5712eb0fb9269f19a6102e6d23d95757c691a1fe85b3ce54216c967bd3f8c70f5f98d0ad1003adfe0a22bb#npm:4.1.4"]\
@@ -5192,15 +5201,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "terser"\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["vue3-naver-maps", [\
-        ["workspace:apps/vue", {\
-          "packageLocation": "./apps/vue/",\
-          "packageDependencies": [\
-            ["vue3-naver-maps", "workspace:apps/vue"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["which", [\

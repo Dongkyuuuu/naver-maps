@@ -477,6 +477,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dongkyuuuu/react-naver-maps@*, @dongkyuuuu/react-naver-maps@workspace:apps/react":
+  version: 0.0.0-use.local
+  resolution: "@dongkyuuuu/react-naver-maps@workspace:apps/react"
+  dependencies:
+    "@types/navermaps": ^3.6.4
+    "@types/node": ^18.15.0
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    eslint: "*"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    tsconfig: "*"
+    types: "*"
+    typescript: "*"
+    utils: "*"
+    validator: "*"
+  languageName: unknown
+  linkType: soft
+
+"@dongkyuuuu/vue3-naver-maps@workspace:apps/vue":
+  version: 0.0.0-use.local
+  resolution: "@dongkyuuuu/vue3-naver-maps@workspace:apps/vue"
+  peerDependencies:
+    vue: ^3
+  languageName: unknown
+  linkType: soft
+
 "@esbuild/android-arm64@npm:0.16.17":
   version: 0.16.17
   resolution: "@esbuild/android-arm64@npm:0.16.17"
@@ -3462,29 +3489,11 @@ prettier@latest:
   languageName: node
   linkType: hard
 
-"react-naver-maps@*, react-naver-maps@workspace:apps/react":
-  version: 0.0.0-use.local
-  resolution: "react-naver-maps@workspace:apps/react"
-  dependencies:
-    "@types/navermaps": ^3.6.4
-    "@types/node": ^18.15.0
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    eslint: "*"
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    tsconfig: "*"
-    types: "*"
-    typescript: "*"
-    utils: "*"
-    validator: "*"
-  languageName: unknown
-  linkType: soft
-
 "react-playground@workspace:apps/react-playground":
   version: 0.0.0-use.local
   resolution: "react-playground@workspace:apps/react-playground"
   dependencies:
+    "@dongkyuuuu/react-naver-maps": "*"
     "@types/navermaps": ^3.6.4
     "@types/node": ^18.15.0
     "@types/react": ^18.0.28
@@ -3493,7 +3502,6 @@ prettier@latest:
     eslint: "*"
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-naver-maps: "*"
     tsconfig: "*"
     typescript: "*"
     vite: ^4.1.0
@@ -4344,14 +4352,6 @@ turbo@latest:
   checksum: 50a9a1f2e29e0ee8fefdec60314d38fb9b746df0bb6ae5a8114014b5bfd95e0fc9b29c0d5e73939361ba53af7eb66c7d20c5656bbe53a783e96540bd3b907c47
   languageName: node
   linkType: hard
-
-"vue3-naver-maps@workspace:apps/vue":
-  version: 0.0.0-use.local
-  resolution: "vue3-naver-maps@workspace:apps/vue"
-  peerDependencies:
-    vue: ^3
-  languageName: unknown
-  linkType: soft
 
 "which@npm:^2.0.1, which@npm:^2.0.2":
   version: 2.0.2
