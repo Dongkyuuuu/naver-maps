@@ -4232,6 +4232,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/react-playground/",\
           "packageDependencies": [\
             ["react-playground", "workspace:apps/react-playground"],\
+            ["@types/navermaps", "npm:3.6.4"],\
             ["@types/node", "npm:18.15.0"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\

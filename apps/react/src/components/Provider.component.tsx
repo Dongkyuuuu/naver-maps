@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import { installOptionsValidator } from "validator";
-import { createScript } from "utils";
+import { useNaverMapScript } from "utils";
 
 import { useIsomorphicLayoutEffect } from "@/hooks/useIsomorphicLayoutEffect";
 
@@ -11,11 +11,13 @@ interface Props extends PropsWithChildren {
 }
 
 export default function Provider({ children, options }: Props) {
+  const { handleCreateScript } = useNaverMapScript();
+
   const validation = installOptionsValidator(options);
   if (validation) throw new Error(validation);
 
   useIsomorphicLayoutEffect(() => {
-    createScript(options);
+    handleCreateScript(options);
   }, []);
 
   return <>{children}</>;

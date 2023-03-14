@@ -1,1 +1,1 @@
-export * from "./createScript";
+export * from "./useNaverMapScript";
