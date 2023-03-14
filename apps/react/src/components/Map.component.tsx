@@ -1,13 +1,24 @@
 import { useEffect, useRef, useState } from "react";
-import { useNaverMapScript } from "utils";
+import { useNaverMapScript, useMap } from "utils";
 import { NaverMapContext } from "@/hooks/useNaverMap";
+
+import type { Map } from "types";
 import type { PropsWithChildren, HTMLAttributes } from "react";
 
 interface Props extends PropsWithChildren, HTMLAttributes<HTMLDivElement> {
   onLoaded?: (map: naver.maps.Map) => void;
+  initLayers?: Map.Layers[];
+  mapOptions?: Map.MapOptions;
 }
 
-export default function Map({ children, onLoaded, ...props }: Props) {
+export default function Map({
+  children,
+  initLayers,
+  mapOptions,
+  onLoaded,
+  ...props
+}: Props) {
+  const { getMapSettings } = useMap();
   const { callbackAfterScriptLoaded } = useNaverMapScript();
   const mapDiv = useRef(null);
   const [navermap, setNaverMap] = useState<naver.maps.Map>();
@@ -15,7 +26,10 @@ export default function Map({ children, onLoaded, ...props }: Props) {
   const useInitMap = () => {
     if (!mapDiv.current) return;
 
-    const init = new window.naver.maps.Map(mapDiv.current);
+    const init = new window.naver.maps.Map(
+      mapDiv.current,
+      getMapSettings(mapOptions, initLayers)
+    );
     setNaverMap(init);
     onLoaded && onLoaded(init);
   };
