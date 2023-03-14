@@ -1,1 +1,1 @@
-export * from "./installOptionsValidate";
+export * from "./installOptionsValidator";

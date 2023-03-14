@@ -1,10 +1,6 @@
-import { scriptInstallOptionsValidate } from "validator";
 import type { ScriptInstallOptions } from "types";
 
 export const createScript = (options: ScriptInstallOptions) => {
-  const validation = scriptInstallOptionsValidate(options);
-  if (validation) throw new Error(validation);
-
   const query = new URLSearchParams({
     [`${options.category ?? "ncp"}ClientId`]: options.clientId,
     submodules: options.subModules?.join() ?? "",

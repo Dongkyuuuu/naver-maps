@@ -3474,7 +3474,10 @@ prettier@latest:
     react: ^18.2.0
     react-dom: ^18.2.0
     tsconfig: "*"
+    types: "*"
     typescript: "*"
+    utils: "*"
+    validator: "*"
   languageName: unknown
   linkType: soft
 
@@ -4258,7 +4261,7 @@ turbo@latest:
   languageName: node
   linkType: hard
 
-"utils@workspace:packages/utils":
+"utils@*, utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "utils@workspace:packages/utils"
   dependencies:

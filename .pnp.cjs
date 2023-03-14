@@ -4219,7 +4219,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:73723ad3e023c3ac297e7f7883a8ab79faed5336c50cef377d0195f5ffd608535bf592dcf3707b9e98973048df87ab4ce137b0214e0ca79bd2f049faf74269f7#npm:18.2.0"],\
             ["tsconfig", "workspace:packages/tsconfig"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+            ["types", "workspace:packages/types"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
+            ["utils", "workspace:packages/utils"],\
+            ["validator", "workspace:packages/validator"]\
           ],\
           "linkType": "SOFT"\
         }]\
