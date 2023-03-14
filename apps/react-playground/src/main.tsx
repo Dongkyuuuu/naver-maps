@@ -7,7 +7,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <NaverMapProvider
       options={{
-        clientId: "c4ovrqy4fg",
+        clientId: import.meta.env.VITE_MAP_KEY,
       }}
     >
       <App />
