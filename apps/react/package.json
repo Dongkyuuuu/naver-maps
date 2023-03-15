@@ -3,18 +3,18 @@
   "description": "NaverMap component for react",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "dist/react-naver-maps.cjs.js",
-  "module": "dist/react-naver-maps.esm.js",
-  "types": "dist/react-naver-maps.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist/*.js",
-    "dist/react-naver-maps.d.ts",
+    "dist/index.*",
     "README.md"
   ],
   "sideEffects": false,
   "scripts": {
     "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tsconfig": "*",
+    "tsup": "*",
     "types": "*",
     "typescript": "*",
     "utils": "*",
