@@ -28,6 +28,9 @@
     "url": "https://github.com/Dongkyuuuu/naver-maps/issues",
     "email": "dongkyu.me@gmail.com"
   },
+  "dependencies": {
+    "types": "*"
+  },
   "devDependencies": {
     "@types/navermaps": "^3.6.4",
     "@types/node": "^18.15.0",
@@ -38,7 +41,6 @@
     "react-dom": "^18.2.0",
     "tsconfig": "*",
     "tsup": "*",
-    "types": "*",
     "typescript": "*",
     "utils": "*",
     "validator": "*"
