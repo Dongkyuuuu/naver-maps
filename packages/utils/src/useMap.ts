@@ -1,4 +1,22 @@
-import type { Map } from "types";
+export type Layers =
+  | "BACKGROUND"
+  | "BACKGROUND_DETAIL"
+  | "BICYCLE"
+  | "CADASTRAL"
+  | "CTT"
+  | "HIKING_TRAIL"
+  | "PANORAMA"
+  | "POI_KOREAN"
+  | "TRANSIT"
+  | "KOREAN"
+  | "ENGLISH"
+  | "CHINESE"
+  | "JAPANESE";
+
+export interface MapOptions extends naver.maps.MapOptions {
+  latitude?: number;
+  longitude?: number;
+}
 
 const LAYER_MAP = {
   BACKGROUND: "bg",
@@ -17,10 +35,7 @@ const LAYER_MAP = {
 };
 
 export const useMap = () => {
-  const getMapSettings = (
-    mapOptions?: Map.MapOptions,
-    initLayers?: Map.Layers[]
-  ) => {
+  const getMapSettings = (mapOptions?: MapOptions, initLayers?: Layers[]) => {
     const options = mapOptions ?? {};
     const layers = initLayers ?? [];
     const overlayType = layers.map((layer) => LAYER_MAP[layer]).join(".");

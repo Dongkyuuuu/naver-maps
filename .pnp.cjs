@@ -32,10 +32,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/tsconfig"\
       },\
       {\
-        "name": "types",\
-        "reference": "workspace:packages/types"\
-      },\
-      {\
         "name": "utils",\
         "reference": "workspace:packages/utils"\
       },\
@@ -52,7 +48,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["naver-maps", ["workspace:."]],\
       ["react-playground", ["workspace:apps/react-playground"]],\
       ["tsconfig", ["workspace:packages/tsconfig"]],\
-      ["types", ["workspace:packages/types"]],\
       ["utils", ["workspace:packages/utils"]],\
       ["validator", ["workspace:packages/validator"]]\
     ],\
@@ -914,7 +909,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:d144bffe400c09f4928c69069112cf6fea33aabb7663e4fadf7f3ae85bb6560ed40c4a6a687dc28515ce8644560ee1e063b24d24baeff99fba34dec9c08ed4b7#npm:18.2.0"],\
             ["tsconfig", "workspace:packages/tsconfig"],\
             ["tsup", "virtual:04ce7f2a06d2b5c6414fcf9e1d0c337ef6b2ecab3422a604f5a75e1d413c61fc8fbfdcf03e2ffafb9e37a3d49d4100e706d1435da53aaa3888d44a7540d3cbb8#npm:6.6.3"],\
-            ["types", "workspace:packages/types"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["utils", "workspace:packages/utils"],\
             ["validator", "workspace:packages/validator"]\
@@ -6924,17 +6918,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["types", [\
-        ["workspace:packages/types", {\
-          "packageLocation": "./packages/types/",\
+        ["npm:0.1.1", {\
+          "packageLocation": "./.yarn/cache/types-npm-0.1.1-d83b47eed3-259d052f6a.zip/node_modules/types/",\
           "packageDependencies": [\
-            ["types", "workspace:packages/types"],\
-            ["@types/navermaps", "npm:3.6.4"],\
-            ["@types/node", "npm:18.15.0"],\
-            ["eslint", "npm:8.36.0"],\
-            ["tsconfig", "workspace:packages/tsconfig"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+            ["types", "npm:0.1.1"]\
           ],\
-          "linkType": "SOFT"\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["typescript", [\
@@ -7047,7 +7036,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.15.0"],\
             ["eslint", "npm:8.36.0"],\
             ["tsconfig", "workspace:packages/tsconfig"],\
-            ["types", "workspace:packages/types"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["validator", "workspace:packages/validator"]\
           ],\
@@ -7084,8 +7072,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.36.0"],\
             ["ts-pattern", "npm:4.2.1"],\
             ["tsconfig", "workspace:packages/tsconfig"],\
-            ["types", "workspace:packages/types"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+            ["types", "npm:0.1.1"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
+            ["utils", "workspace:packages/utils"]\
           ],\
           "linkType": "SOFT"\
         }]\

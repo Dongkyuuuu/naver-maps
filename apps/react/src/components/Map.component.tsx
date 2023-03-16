@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import { useNaverMapScript, useMap } from "utils";
 import { NaverMapContext } from "@/hooks/useNaverMap";
 
-import type { Map } from "types";
+import type { Layers, MapOptions } from "utils";
 import type { PropsWithChildren, HTMLAttributes } from "react";
 
 interface Props extends PropsWithChildren, HTMLAttributes<HTMLDivElement> {
   onLoaded?: (map: naver.maps.Map) => void;
-  initLayers?: Map.Layers[];
-  mapOptions?: Map.MapOptions;
+  initLayers?: Layers[];
+  mapOptions?: MapOptions;
 }
 
 export default function Map({

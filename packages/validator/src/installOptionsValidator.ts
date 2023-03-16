@@ -1,7 +1,7 @@
 import { match, P } from "ts-pattern";
-import type { ScriptInstallOptions } from "types";
+import type { InstallOptions } from "utils";
 
-export const installOptionsValidator = (options: ScriptInstallOptions) =>
+export const installOptionsValidator = (options: InstallOptions) =>
   match(options)
     .with(
       P.not({ clientId: P.string }),

@@ -1,9 +1,17 @@
-import type { ScriptInstallOptions } from "types";
+export type SubModules = "panorama" | "geocoder" | "drawing" | "visualization"; // NaverMap SubModul Options
+export type InstallCategory = "gov" | "ncp" | "fin";
+
+/** Script install options */
+export interface InstallOptions {
+  clientId: string;
+  category?: InstallCategory;
+  subModules?: SubModules[];
+}
 
 export const useNaverMapScript = () => {
   const SCRIPT_ID = "naver-maps-script-id";
 
-  const handleCreateScript = (options: ScriptInstallOptions) => {
+  const handleCreateScript = (options: InstallOptions) => {
     const isExistScript = document.getElementById(SCRIPT_ID);
     if (isExistScript) return;
 

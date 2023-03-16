@@ -3,11 +3,9 @@ import { installOptionsValidator } from "validator";
 import { useNaverMapScript } from "utils";
 
 import { useIsomorphicLayoutEffect } from "@/hooks/useIsomorphicLayoutEffect";
-
-import type { ScriptInstallOptions } from "types";
-
+import type { InstallOptions } from "utils";
 interface Props extends PropsWithChildren {
-  options: ScriptInstallOptions;
+  options: InstallOptions;
 }
 
 export default function Provider({ children, options }: Props) {
