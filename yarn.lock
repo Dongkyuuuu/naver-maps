@@ -6079,7 +6079,6 @@ turbo@latest:
     eslint: "*"
     tsconfig: "*"
     typescript: "*"
-    validator: "*"
   languageName: unknown
   linkType: soft
 

@@ -15,7 +15,6 @@
     "@types/node": "^18.15.0",
     "eslint": "*",
     "tsconfig": "*",
-    "typescript": "*",
-    "validator": "*"
+    "typescript": "*"
   }
 }
