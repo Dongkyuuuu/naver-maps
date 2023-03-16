@@ -1,6 +1,7 @@
 {
   "name": "validator",
   "description": "naver maps validator",
+  "private": true,
   "version": "0.0.0",
   "license": "MIT",
   "main": "src/index.ts",

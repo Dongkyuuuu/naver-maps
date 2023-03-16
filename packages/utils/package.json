@@ -1,6 +1,7 @@
 {
   "name": "utils",
   "description": "naver maps utils",
+  "private": true,
   "version": "0.0.0",
   "license": "MIT",
   "main": "src/index.ts",

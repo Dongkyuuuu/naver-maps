@@ -1,6 +1,7 @@
 {
   "name": "types",
   "description": "naver maps types",
+  "private": true,
   "version": "0.0.0",
   "license": "MIT",
   "main": "src/index.d.ts",

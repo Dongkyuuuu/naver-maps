@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NaverMap } from "@dongkyuuuu/react-naver-maps/dist";
+import { NaverMap } from "@dongkyuuuu/react-naver-maps/src";
 
 export default function App() {
   const [isNumber, setIsNumber] = useState(0);
