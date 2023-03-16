@@ -1,4 +1,4 @@
-# naver-maps
+# naver-maps [WIP]
 
 This library was created to facilitate the use of the [naverMap API](https://navermaps.github.io/maps.js.ncp/docs/index.html) in the front-end framework (react, vue ...)
 
