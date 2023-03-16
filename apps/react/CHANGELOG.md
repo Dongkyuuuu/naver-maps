@@ -1,5 +1,11 @@
 # @dongkyuuuu/react-naver-maps
 
+## 0.0.3
+
+### Patch Changes
+
+- fix types package import issue
+
 ## 0.0.2
 
 ### Patch Changes

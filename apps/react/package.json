@@ -1,7 +1,7 @@
 {
   "name": "@dongkyuuuu/react-naver-maps",
   "description": "NaverMap component for react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
