@@ -14,7 +14,7 @@
   "scripts": {
     "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "yarn lint --fix",
-    "build": "tsup --dts-resolve"
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "react-dom": "^18.2.0",
     "tsconfig": "*",
     "tsup": "*",
+    "types": "*",
     "typescript": "*",
     "utils": "*",
     "validator": "*"

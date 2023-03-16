@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNaverMapScript, useMap } from "utils";
 import { NaverMapContext } from "@/hooks/useNaverMap";
 
-import type { Layers, MapOptions } from "utils";
+import type { Layers, MapOptions } from "types";
 import type { PropsWithChildren, HTMLAttributes } from "react";
 
 interface Props extends PropsWithChildren, HTMLAttributes<HTMLDivElement> {

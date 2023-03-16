@@ -1,12 +1,4 @@
-export type SubModules = "panorama" | "geocoder" | "drawing" | "visualization"; // NaverMap SubModul Options
-export type InstallCategory = "gov" | "ncp" | "fin";
-
-/** Script install options */
-export interface InstallOptions {
-  clientId: string;
-  category?: InstallCategory;
-  subModules?: SubModules[];
-}
+import type { InstallOptions } from "types";
 
 export const useNaverMapScript = () => {
   const SCRIPT_ID = "naver-maps-script-id";

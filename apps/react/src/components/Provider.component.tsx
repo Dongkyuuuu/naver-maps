@@ -3,7 +3,7 @@ import { installOptionsValidator } from "validator";
 import { useNaverMapScript } from "utils";
 
 import { useIsomorphicLayoutEffect } from "@/hooks/useIsomorphicLayoutEffect";
-import type { InstallOptions } from "utils";
+import type { InstallOptions } from "types";
 interface Props extends PropsWithChildren {
   options: InstallOptions;
 }

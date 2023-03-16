@@ -1,23 +1,4 @@
-export type Layers =
-  | "BACKGROUND"
-  | "BACKGROUND_DETAIL"
-  | "BICYCLE"
-  | "CADASTRAL"
-  | "CTT"
-  | "HIKING_TRAIL"
-  | "PANORAMA"
-  | "POI_KOREAN"
-  | "TRANSIT"
-  | "KOREAN"
-  | "ENGLISH"
-  | "CHINESE"
-  | "JAPANESE";
-
-export interface MapOptions extends naver.maps.MapOptions {
-  latitude?: number;
-  longitude?: number;
-}
-
+import type { MapOptions, Layers } from "types";
 const LAYER_MAP = {
   BACKGROUND: "bg",
   BACKGROUND_DETAIL: "ol",

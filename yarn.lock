@@ -735,6 +735,7 @@ __metadata:
     react-dom: ^18.2.0
     tsconfig: "*"
     tsup: "*"
+    types: "*"
     typescript: "*"
     utils: "*"
     validator: "*"
@@ -5969,12 +5970,17 @@ turbo@latest:
   languageName: node
   linkType: hard
 
-"types@npm:*":
-  version: 0.1.1
-  resolution: "types@npm:0.1.1"
-  checksum: 259d052f6a23e8ac2f8b11e83fb6d97d4314d5ec510f68e1d9ed9b9c8c93b6fb1a43467b5b44d450ae1014d1d445021da2562035cd377d2f2e627574dc77737f
-  languageName: node
-  linkType: hard
+"types@*, types@workspace:packages/types":
+  version: 0.0.0-use.local
+  resolution: "types@workspace:packages/types"
+  dependencies:
+    "@types/navermaps": ^3.6.4
+    "@types/node": ^18.15.0
+    eslint: "*"
+    tsconfig: "*"
+    typescript: "*"
+  languageName: unknown
+  linkType: soft
 
 "typescript@npm:*, typescript@npm:^4.6.4, typescript@npm:^4.9.5":
   version: 4.9.5
@@ -6078,6 +6084,7 @@ turbo@latest:
     "@types/node": ^18.15.0
     eslint: "*"
     tsconfig: "*"
+    types: "*"
     typescript: "*"
   languageName: unknown
   linkType: soft
