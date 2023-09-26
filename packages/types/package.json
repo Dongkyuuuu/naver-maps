@@ -1,6 +1,5 @@
 {
   "name": "types",
-  "description": "naver maps types",
   "private": true,
   "version": "0.0.0",
   "license": "MIT",
@@ -11,9 +10,9 @@
     "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "@types/navermaps": "^3.6.4",
+    "@types/navermaps": "^3.7.0",
     "@types/node": "^18.15.0",
-    "eslint": "*",
+    "eslint": "^8.50.0",
     "tsconfig": "*",
     "typescript": "*"
   }

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import react from "react";
 import { useNaverMapScript, useMap } from "utils";
 import { NaverMapContext } from "@/hooks/useNaverMap";
 
@@ -20,8 +20,8 @@ export default function Map({
 }: Props) {
   const { getMapSettings } = useMap();
   const { callbackAfterScriptLoaded } = useNaverMapScript();
-  const mapDiv = useRef(null);
-  const [navermap, setNaverMap] = useState<naver.maps.Map>();
+  const mapDiv = react.useRef(null);
+  const [navermap, setNaverMap] = react.useState<naver.maps.Map>();
 
   const useInitMap = () => {
     if (!mapDiv.current) return;
@@ -34,7 +34,7 @@ export default function Map({
     onLoaded && onLoaded(init);
   };
 
-  useEffect(() => {
+  react.useEffect(() => {
     window.naver ? useInitMap() : callbackAfterScriptLoaded(useInitMap);
 
     return () => {
