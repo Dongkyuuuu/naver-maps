@@ -4,8 +4,6 @@ import { validateInstallOptions } from ".";
 const NAVER_MAP_SCRIPT_ID = "naver-maps-script-id";
 const NAVER_MAP_SCRIPT_URL = "https://oapi.map.naver.com/openapi/v3/maps.js";
 
-export const isLoaded = () => !!document.getElementById(NAVER_MAP_SCRIPT_ID);
-
 /** Install Naver Map Script */
 export const handleInstallScript = ({
   clientId,
@@ -15,7 +13,7 @@ export const handleInstallScript = ({
 }: InstallOptions & { callback?: Array<() => void> }) => {
   const options = { clientId, category, subModules };
   const validateMessage = validateInstallOptions(options);
-  const isExistScript = isLoaded();
+  const isExistScript = !!document.getElementById(NAVER_MAP_SCRIPT_ID);
 
   if (validateMessage) throw new Error(validateMessage);
   if (isExistScript) return;
