@@ -1,20 +1,26 @@
 {
-  "name": "@dongkyuuuu/react-naver-maps",
-  "description": "NaverMap component for react",
-  "version": "1.0.0",
+  "name": "@naver-maps/react",
+  "description": "NaverMaps Component For React or Next",
+  "version": "0.0.0",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/index.*",
-    "README.md"
-  ],
   "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
   "scripts": {
     "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "yarn lint --fix",
-    "build": "tsup"
+    "build": "vite build -c ./vite.config.ts",
+    "dev": "vite ./playground"
   },
   "repository": {
     "type": "git",
@@ -28,19 +34,36 @@
     "url": "https://github.com/Dongkyuuuu/naver-maps/issues",
     "email": "dongkyu.me@gmail.com"
   },
+  "keywords": [
+    "react",
+    "react-map",
+    "react-naver-maps",
+    "naver-maps",
+    "naver-map"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^18"
+  },
   "devDependencies": {
-    "@types/navermaps": "^3.6.4",
+    "@types/navermaps": "*",
     "@types/node": "^18.15.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "eslint": "*",
+    "@vitejs/plugin-react": "^4.1.0",
+    "eslint": "^8.50.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tsconfig": "*",
-    "tsup": "*",
     "types": "*",
     "typescript": "*",
     "utils": "*",
-    "validator": "*"
+    "vite": "^4.4.9",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^3.6.0"
   }
 }

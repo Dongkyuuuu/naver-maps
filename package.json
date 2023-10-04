@@ -14,27 +14,24 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.0",
+    "@changesets/cli": "^2.26.2",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-turbo": "latest",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-turbo": "^0.0.9",
+    "@types/navermaps": "^3.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-turbo": "^1.10.14",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-turbo": "^1.10.14",
     "husky": "^8.0.3",
-    "prettier": "latest",
-    "tsup": "^6.6.3",
-    "turbo": "latest",
-    "typescript": "^4.9.5"
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.14",
+    "typescript": "^5.2.2"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@3.4.1",
-  "dependencies": {
-    "ts-pattern": "^4.2.1"
-  }
+  "packageManager": "yarn@3.6.3"
 }
