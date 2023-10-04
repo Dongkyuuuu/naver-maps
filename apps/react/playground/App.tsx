@@ -2,6 +2,7 @@ import { NaverMap, NaverMarker } from "@/index";
 
 function App() {
   const key = import.meta.env.VITE_NAVER_MAP_KEY;
+
   return (
     <>
       <NaverMap clientId={key} style={{ width: "60vw", height: "50vh" }}>
