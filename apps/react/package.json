@@ -1,7 +1,7 @@
 {
   "name": "@naver-maps/react",
   "description": "NaverMaps Component For React or Next",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
@@ -41,6 +41,9 @@
     "naver-maps",
     "naver-map"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "react": "^18"
   },

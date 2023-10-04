@@ -1,4 +1,4 @@
-import { NaverMap, NaverMarker } from "@/index";
+import { NaverMap, NaverMarker } from "../dist";
 
 function App() {
   const key = import.meta.env.VITE_NAVER_MAP_KEY;
@@ -9,9 +9,7 @@ function App() {
         <NaverMarker
           latitude={37.566616443521745}
           longitude={126.97837068565364}
-        >
-          sdds
-        </NaverMarker>
+        />
       </NaverMap>
     </>
   );
