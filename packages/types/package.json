@@ -10,7 +10,7 @@
     "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "@types/navermaps": "^3.7.0",
+    "@types/navermaps": "*",
     "@types/node": "^18.15.0",
     "eslint": "^8.50.0",
     "tsconfig": "*",

@@ -27,3 +27,5 @@ export interface MapOptions extends naver.maps.MapOptions {
   latitude?: number;
   longitude?: number;
 }
+
+export type NaverMapFunction = (map: naver.maps.Map) => void;
