@@ -7,7 +7,7 @@ import {
 } from "react";
 import type { InstallOptions, Layers, MapOptions } from "types";
 import { getMapSettings, handleInstallScript } from "utils";
-import { NaverMapContext } from "@/stores/naverMapContext";
+import { NaverMapContext } from "@/stores";
 
 interface Props extends InstallOptions, HtmlHTMLAttributes<HTMLDivElement> {
   mapOptions?: MapOptions;

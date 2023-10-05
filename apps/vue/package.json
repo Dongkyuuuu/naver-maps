@@ -1,0 +1,67 @@
+{
+  "name": "@naver-maps/vue",
+  "description": "NaverMaps Component For Vue or Nuxt",
+  "version": "0.0.0",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "yarn lint --fix",
+    "build": "vite build -c ./vite.config.ts",
+    "dev": "vite ./playground"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dongkyuuuu/naver-maps/tree/main/apps/vue"
+  },
+  "author": {
+    "name": "Dongkyuuuu",
+    "email": "dongkyu.me@gmail.com"
+  },
+  "bug": {
+    "url": "https://github.com/Dongkyuuuu/naver-maps/issues",
+    "email": "dongkyu.me@gmail.com"
+  },
+  "keywords": [
+    "vue",
+    "vue-map",
+    "vue-naver-maps",
+    "vue3-naver-maps",
+    "naver-maps",
+    "naver-map"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "vue": "^3"
+  },
+  "devDependencies": {
+    "@types/navermaps": "*",
+    "@types/node": "^18.15.0",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "eslint": "^8.50.0",
+    "tsconfig": "*",
+    "types": "*",
+    "typescript": "*",
+    "utils": "*",
+    "vite": "^4.4.9",
+    "vite-tsconfig-paths": "^4.2.1",
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^3.6.0"
+  }
+}

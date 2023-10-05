@@ -1,4 +1,4 @@
-import { NaverMapContext } from "@/stores/naverMapContext";
+import { NaverMapContext } from "@/stores";
 import { useContext, useMemo } from "react";
 
 export const useNaverMap = () => {
