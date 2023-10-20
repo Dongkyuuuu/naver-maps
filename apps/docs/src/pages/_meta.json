@@ -1,0 +1,11 @@
+{
+  "index": "시작하기",
+  "install": "설치하기",
+  "components": "컴포넌트",
+  "NaverMapsOffical": {
+    "title": "네이버 지도 공식 홈페이지",
+    "type": "page",
+    "href": "https://navermaps.github.io/maps.js.ncp/docs/",
+    "newWindow": true
+  }
+}

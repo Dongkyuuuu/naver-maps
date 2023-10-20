@@ -58,10 +58,8 @@
     "typescript": "*",
     "utils": "*",
     "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.6.0",
     "vite-tsconfig-paths": "^4.2.1",
     "vue": "^3.3.4"
-  },
-  "dependencies": {
-    "vite-plugin-dts": "^3.6.0"
   }
 }

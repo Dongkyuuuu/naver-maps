@@ -61,9 +61,7 @@
     "typescript": "*",
     "utils": "*",
     "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.6.0",
     "vite-tsconfig-paths": "^4.2.1"
-  },
-  "dependencies": {
-    "vite-plugin-dts": "^3.6.0"
   }
 }
