@@ -20,7 +20,6 @@
     "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "yarn lint --fix",
     "build": "vite build -c ./vite.config.ts",
-    "release": "yarn build && npm publish",
     "dev": "vite ./playground"
   },
   "repository": {
