@@ -3,8 +3,31 @@ import { Tabs } from "nextra/components";
 # 설치하기
 
 <Tabs items={["react", "vue"]}>
-  <Tabs.Tab>ㅁㅁㅁㅁ</Tabs.Tab>
-  <Tabs.Tab>ㄴㄴㄴ</Tabs.Tab>
+  <Tabs.Tab>
+    React 를 사용하는 경우 `@naver-maps/react` 패키지를
+    설치해주세요.
+
+```sh
+yarn add @naver-maps/react
+```
+
+</Tabs.Tab>
+<Tabs.Tab>
+Vue 를 사용하는 경우 `@naver-maps/vue` 패키지를
+  설치해주세요. vue3 기반의 프로젝트에서만 사용 가능합니다.
+
+```sh
+yarn add @naver-maps/vue
+```
+
+  </Tabs.Tab>
+
 </Tabs>
 
 ## For TypeScript
+
+타입스크립트를 사용하는 경우, [`@types/navermaps`](https://www.npmjs.com/package/@types/navermaps)를 설치해야 합니다.
+
+```sh
+yarn add -D @types/navermaps
+```

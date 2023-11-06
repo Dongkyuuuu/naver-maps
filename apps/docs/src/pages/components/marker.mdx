@@ -1,0 +1,62 @@
+import { Tabs } from "nextra/components";
+import NaverMap from "@/components/Map";
+import NaverMarker from "@/components/Marker";
+
+# NaverMarker
+
+네이버 지도의 마커를 표시하는 컴포넌트 입니다. `HtmlIcon`을 지원합니다.
+
+## 예시
+
+<NaverMap>
+  <NaverMarker />
+</NaverMap>
+
+## 사용방법
+
+<Tabs items={["react", "vue"]}>
+  <Tabs.Tab>
+    ```tsx
+    import { NaverMap, NaverMaker } from '@naver-maps/react'
+
+    export default function Example(){
+        const onLoadMarker = (marker:naver.maps.Marker) => {
+            // 마커가 로드되었을 때 호출되는 콜백입니다.
+        }
+
+        return (
+            <NaverMap style={{ width: "100%", height: "100vh" }} clientId="YOUR_CLIENT_ID">
+                <NaverMarker latitude={37.51347} longitude={127.041722} onLoaded={onLoadMarker}>
+                    // children이 있는 경우, HtmlIcon으로 렌더링 됩니다.
+                </NaverMaker>
+            </NaverMap>
+        )
+    }
+    ```
+
+</Tabs.Tab>
+<Tabs.Tab>
+    ```vue
+    <script setup lang="ts">
+    import { NaverMap, NaverMarker } from '@naver-maps/vue'
+    const onLoadMarker = (marker:naver.maps.Marker) => {
+        // 마커가 로드되었을 때 호출되는 콜백입니다.
+    }
+
+    </script>
+
+    <template>
+        <NaverMap style="width: 100vw; height: 100vh" clientId="YOUR_CLIENT_ID">
+            <NaverMaker :latitude="37.51347" :longitude="127.041722" :onLoaded="onLoadMarker">
+                // slot 있는 경우, HtmlIcon으로 렌더링 됩니다.
+            </NaverMaker>
+        </NaverMap>
+    </template>
+    ```
+
+  </Tabs.Tab>
+</Tabs>
+
+### onLoaded
+
+`NaverMarker` 컴포넌트가 렌더링 완료된 이후 실행되는 함수입니다. `naver.maps.Marker` 객체를 인자로 받습니다.
