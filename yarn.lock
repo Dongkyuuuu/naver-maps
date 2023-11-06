@@ -372,7 +372,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@changesets/cli@npm:*, @changesets/cli@npm:^2.26.2":
+"@changesets/cli@npm:^2.26.2":
   version: 2.26.2
   resolution: "@changesets/cli@npm:2.26.2"
   dependencies:
@@ -1349,7 +1349,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@naver-maps/react@workspace:apps/react"
   dependencies:
-    "@changesets/cli": "npm:*"
     "@types/navermaps": "npm:*"
     "@types/node": "npm:^18.18.2"
     "@types/react": "npm:^18.0.28"
@@ -1374,7 +1373,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@naver-maps/vue@workspace:apps/vue"
   dependencies:
-    "@changesets/cli": "npm:*"
     "@types/navermaps": "npm:*"
     "@types/node": "npm:^18.18.2"
     "@vitejs/plugin-vue": "npm:^4.4.0"

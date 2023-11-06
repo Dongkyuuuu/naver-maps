@@ -20,7 +20,7 @@
     "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "yarn lint --fix",
     "build": "vite build -c ./vite.config.ts",
-    "release": "yarn build && yarn changeset publish",
+    "release": "yarn build && yarn publish",
     "dev": "vite ./playground"
   },
   "repository": {
@@ -48,7 +48,6 @@
     "react": "^18"
   },
   "devDependencies": {
-    "@changesets/cli": "*",
     "@types/navermaps": "*",
     "@types/node": "^18.18.2",
     "@types/react": "^18.0.28",

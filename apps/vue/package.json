@@ -21,7 +21,7 @@
     "lint:fix": "yarn lint --fix",
     "build": "vite build -c ./vite.config.ts",
     "dev": "vite ./playground",
-    "release": "yarn build && yarn changeset publish"
+    "release": "yarn build && yarn publish"
   },
   "repository": {
     "type": "git",
@@ -50,7 +50,6 @@
     "vue": "^3"
   },
   "devDependencies": {
-    "@changesets/cli": "*",
     "@types/navermaps": "*",
     "@types/node": "^18.18.2",
     "@vitejs/plugin-vue": "^4.4.0",
