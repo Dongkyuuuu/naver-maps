@@ -20,6 +20,7 @@
     "lint": "eslint -c .eslintrc.json 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "yarn lint --fix",
     "build": "vite build -c ./vite.config.ts",
+    "release": "yarn build && yarn changeset publish",
     "dev": "vite ./playground"
   },
   "repository": {
@@ -38,8 +39,7 @@
     "react",
     "react-map",
     "react-naver-maps",
-    "naver-maps",
-    "naver-map"
+    "react-maps"
   ],
   "publishConfig": {
     "access": "public"
@@ -48,8 +48,9 @@
     "react": "^18"
   },
   "devDependencies": {
+    "@changesets/cli": "*",
     "@types/navermaps": "*",
-    "@types/node": "^18.15.0",
+    "@types/node": "^18.18.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.1.0",
