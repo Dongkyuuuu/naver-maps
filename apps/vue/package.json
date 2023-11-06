@@ -21,7 +21,7 @@
     "lint:fix": "yarn lint --fix",
     "build": "vite build -c ./vite.config.ts",
     "dev": "vite ./playground",
-    "release": "yarn build && yarn publish"
+    "release": "yarn build && npm publish"
   },
   "repository": {
     "type": "git",
