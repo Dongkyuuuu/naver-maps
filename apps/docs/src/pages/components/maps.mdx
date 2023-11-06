@@ -1,0 +1,80 @@
+import { Tabs } from "nextra/components";
+import NaverMap from "@/components/Map";
+
+# NaverMap
+
+네이버 지도를 표시하는 컴포넌트 입니다. 사용방법은 아래와 같습니다.
+
+## 예시
+
+<NaverMap />
+
+## 사용방법
+
+`NaverMap` 컴포넌트 호출 시, `clientId`를 같이 넘겨주어야 합니다.
+
+<Tabs items={["react", "vue"]}>
+  <Tabs.Tab>
+    ```tsx
+    import { NaverMap } from '@naver-maps/react'
+
+    export default function Example(){
+        const onLoadMap = (map:naver.maps.Map) => {
+            // 지도 로드 완료 시 실행되는 함수
+        }
+
+        return (
+            <NaverMap
+              style={{ width: "100%", height: "100vh" }}
+              clientId="YOUR_CLIENT_ID"
+              onLoaded={onLoadMap}
+              mapOptions={{
+                latitude: 37.51347,
+                longitude: 127.041722,
+                zoom: 14,
+            }}>
+            </NaverMap>
+        )
+    }
+    ```
+
+</Tabs.Tab>
+<Tabs.Tab>
+    ```vue
+    <script setup lang="ts">
+    import { NaverMap } from '@naver-maps/vue'
+    
+    const onLoadMap = (map:naver.maps.Map) => {
+        // 지도 로드 완료 시 실행되는 함수
+    }
+    </script>
+
+    <template>
+        <NaverMap
+          style="width: 100vw; height: 100vh"
+          clientId="YOUR_CLIENT_ID"
+          @onLoaded="onLoadMap"
+          :mapOptions="{
+            latitude: 37.51347,
+            longitude: 127.041722,
+            zoom: 14,
+          }"
+        >
+        </NaverMap>
+    </template>
+    ```
+
+  </Tabs.Tab>
+
+</Tabs>
+
+### mapOptions
+
+`NaverMap` 컴포넌트의 `mapOptions` 속성을 통해 지도의 옵션을 설정할 수 있습니다.
+
+- `latitude`: 맵의 기본중앙 위도
+- `longitude`: 맵의 기본중앙 경도
+
+### onLoaded
+
+`NaverMap` 컴포넌트가 렌더링 완료된 이후 실행되는 함수입니다. `naver.maps.Map` 객체를 인자로 받습니다.
