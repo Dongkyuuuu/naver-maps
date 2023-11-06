@@ -39,7 +39,7 @@ jobs:
       - name: Create Release Pull Request
         uses: changesets/action@v1
         with:
-          publish: yarn changeset publish
+          publish: yarn release
           version: yarn changeset version
           commit: "chore(release): version packages"
         env:
