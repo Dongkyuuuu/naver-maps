@@ -1,7 +1,7 @@
 {
   "name": "@naver-maps/vue",
   "description": "NaverMaps Component For Vue or Nuxt",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
