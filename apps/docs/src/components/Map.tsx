@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { NaverMap } from "@naver-maps/react";
 import type { PropsWithChildren } from "react";
 
@@ -12,6 +13,7 @@ export default function Map({ children }: PropsWithChildren) {
       }}
       clientId="krm0ye8xno"
     >
+      {/* @ts-ignore */}
       {children}
     </NaverMap>
   );
